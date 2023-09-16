@@ -1,0 +1,106 @@
+/* Imports */
+@import "fonts.css";
+
+@font-face {
+	font-family: "NordiqueProBold";
+	src: url("../media/fonts/NordiqueProBold/fontsfree-net-nordique-pro-bold-webfont.woff") format("woff"),
+	url("../media/fonts/NordiqueProBold/fontsfree-net-nordique-pro-bold-webfont.woff2") format("woff2");
+}
+
+:root {
+	--bg: #111520;
+	--accent: #90BD0A;
+}
+
+* {
+	/* Reset */
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: Helvetica, sans-serif;
+}
+
+footer {
+	position: fixed;
+	bottom: 0;
+	width: 100vw;
+	opacity: 0.6;
+	background-color: #EEEEEE;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 15px;
+}
+
+footer:hover {
+	opacity: 1;
+}
+
+header 
+{
+	background-color: var(--bg);
+	color: #FFFFFF;
+	padding: 15px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+main {
+	padding: 15px 10vw;
+}
+
+nav ul {
+	display: flex;
+	gap: 1em;
+
+}
+
+nav li {
+	list-style: none;
+	display: inline-block;
+	position: relative;
+}
+
+nav li::after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	transform: scaleX(0);
+	height: 2px;
+	bottom: -2px;
+	left: 0;
+	background-color: var(--accent);
+	transform-origin: bottom center;
+	transition: transform 0.15s ease-out;
+}
+
+nav li:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom center;
+}
+
+nav li > a {
+	text-decoration: none;
+	color:#FFF;
+}
+
+.cliquable:hover {
+	transform: scale(1.05);
+}
+
+.cliquable:active {
+	transform: scale(0.9);
+}
+
+
+.logo_font {
+	text-transform: lowercase;
+	font-family: 'NordiqueProBold', Arial, sans-serif;
+}
+
+.logo_green {
+	color: var(--accent);
+}

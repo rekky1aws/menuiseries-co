@@ -1,0 +1,5 @@
+@font-face {
+	font-family: "NordiqueProBold";
+	src: url("../media/fonts/NordiqueProBold.woff") format("woff"),
+	url("../media/fonts/NordiqueProBold.woff2") format("woff2");
+}
