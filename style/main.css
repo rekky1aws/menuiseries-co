@@ -29,9 +29,12 @@ footer {
 	opacity: 0.6;
 	background-color: #EEEEEE;
 	display: flex;
+	flex-direction: column;
+	gap: 4px;
 	justify-content: center;
 	align-items: center;
 	padding: 15px;
+	transition: ease-in-out 0.2s;
 }
 
 footer:hover {
@@ -49,7 +52,10 @@ header
 }
 
 main {
+	display: flex;
+	flex-direction: column;
 	padding: 15px 10vw;
+	gap: 2em;
 }
 
 nav ul {
@@ -87,6 +93,10 @@ nav li > a {
 	color:#FFF;
 }
 
+p {
+	text-align: justify;
+}
+
 .cliquable:hover {
 	transform: scale(1.05);
 }
@@ -95,6 +105,12 @@ nav li > a {
 	transform: scale(0.9);
 }
 
+.logo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 5px;
+}
 
 .logo_font {
 	text-transform: lowercase;
@@ -103,4 +119,24 @@ nav li > a {
 
 .logo_green {
 	color: var(--accent);
+}
+
+.logo_image {
+	aspect-ratio: 1;
+	height: 2.5em;
+}
+
+.img_gallery {
+	display:  grid;
+	grid-template-columns: repeat(5, 1fr);
+	gap: 1em;
+}
+
+.img_gallery > img {
+	display: block;
+	max-width: 100%;
+	aspect-ratio: 1;
+	object-fit: cover;
+	border-radius: 1em;
+	height: 100%;
 }

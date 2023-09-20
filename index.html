@@ -9,16 +9,17 @@
 	<meta name=" robots" content=" index, follow">
 	<title> Menuiseries and Co </title>
 	<link rel="stylesheet" type="text/css" href="style/main.css">
+	<script src="script/app.js" type="text/javascript" charset="utf-8" defer></script>
 </head>
 <body>
 	<header>
 		<div class="logo">
-			<!-- <img src="" class="logo_image"> -->
+			<img src="https://picsum.photos/100" class="logo_image">
 			<h1 class="logo_font logo_title"> Menuiseries <span class="logo_green">and Co</span></h1>
 		</div>
 		<nav>
 			<ul>
-				<li class="cliquable"><a href="#">Présentation</a></li>
+				<li class="cliquable"><a href="#presentation">Présentation</a></li>
 				<li class="cliquable"><a href="#">Services</a></li>
 				<li class="cliquable"><a href="#">Qui sommes nous</a></li>
 				<li class="cliquable"><a href="#">Contact</a></li>
@@ -26,7 +27,7 @@
 		</nav>
 	</header>
 	<main>
-		<section>
+		<section id="presentation">
 			 <h2> Présentation </h2>
 			 <p>
 			 	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -37,9 +38,52 @@
 			 	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 			 </p>
 		</section>
+
+		<section id="galerie">
+			 <h2> Galerie </h2>
+			 <div class="img_gallery">
+			 	<img src="https://picsum.photos/600/300" alt="">
+			 	<img src="https://picsum.photos/500/300" alt="">
+			 	<img src="https://picsum.photos/500/200" alt="">
+			 	<img src="https://picsum.photos/500/400" alt="">
+			 	<img src="https://picsum.photos/400/300" alt="">
+			 </div>
+		</section>
+
+		<section>
+			 <h2> Faire mon devis </h2>
+			 <p>
+			 	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			 	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			 	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			 	consequat.
+			 </p>
+		</section>
+
+		<section>
+			 <h2> Secteur d'Activités </h2>
+			 <p>
+			 	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			 	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			 	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			 	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			 	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			 	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			 </p>
+		</section>
+
+		<section id="avis">
+			 <h2> Avis </h2>
+			 <div class="opinion_grid">
+			 	<div class="">
+			 		
+			 	</div>
+			 </div>
+		</section>
 	</main>
 	<footer>
 		<div class="address">25 rue Léo Lagrange 62150 Fresnicourt le Dolmen</div>
+		<div class="phone">06 13 99 12 42</div>
 	</footer>
 </body>
 </html>
