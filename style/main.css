@@ -127,16 +127,34 @@ p {
 }
 
 .img_gallery {
-	display:  grid;
-	grid-template-columns: repeat(5, 1fr);
+	display:  flex;
+	justify-content: space-evenly;
+	align-items: center;
 	gap: 1em;
+	height: 15vw;
+	pointer-events: none;
+}
+
+.img_gallery:hover {
+
+}
+
+.img_gallery:hover > img {
+	width: 10%;
 }
 
 .img_gallery > img {
 	display: block;
-	max-width: 100%;
 	aspect-ratio: 1;
+	width: 20%;
+	height: 10vw;
 	object-fit: cover;
 	border-radius: 1em;
-	height: 100%;
+	transition: ease-in-out 0.2s;
+	pointer-events: all;
+}
+
+.img_gallery > img:hover {
+	width: 60%;
+	height: 15vw;
 }
